@@ -1,22 +1,21 @@
 # AI Research Topic Classifier
 
-A complete, GitHub-ready machine-learning project that classifies short research paper abstracts into topic areas using a lightweight Naive Bayes text model.
+A GitHub-ready machine-learning project that classifies short research paper abstracts into topic areas using a lightweight Naive Bayes text model.
 
-The core model uses only the Python standard library. It includes a sample dataset, training script, prediction CLI, saved model JSON, tests, model card, and GitHub Actions workflow.
+The core model uses only the Python standard library. The uploaded version includes a sample dataset, model code, training script, simple text-labeling command, and a saved model JSON artifact.
 
 ## Features
 
-- Trains a multinomial Naive Bayes classifier from CSV text data.
+- Trains a multinomial Naive Bayes model from CSV text data.
 - Saves the trained model as JSON.
-- Predicts a topic label for a new abstract from the command line.
-- Includes a simple Streamlit UI as an optional interface.
-- Includes unit tests and CI.
+- Labels a new abstract from the command line.
+- Includes a sample dataset and a prebuilt model artifact.
 
 ## Topics in the sample dataset
 
 - artificial_intelligence
-- cybersecurity
 - data_science
+- network_systems
 - software_engineering
 
 ## Quick start
@@ -27,32 +26,19 @@ python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 ```
 
-Train the model:
+Build the model artifact from the sample dataset:
 
 ```bash
-python -m paper_topic_classifier.train \
+python -m paper_topic_classifier.run_train \
   --data data/sample_papers.csv \
   --model models/topic_classifier.json
 ```
 
-Predict a topic:
+Label a new abstract:
 
 ```bash
-python -m paper_topic_classifier.predict \
-  --text "This paper proposes a transformer model for classifying technical documents."
-```
-
-Run tests:
-
-```bash
-python -m unittest discover -s tests
-```
-
-Optional Streamlit app:
-
-```bash
-pip install -r requirements.txt
-streamlit run app/streamlit_app.py
+python -m paper_topic_classifier.label_text \
+  --text "This paper proposes a neural model for classifying technical documents."
 ```
 
 ## Project structure
@@ -63,21 +49,15 @@ ai-research-topic-classifier/
 ├── .gitignore
 ├── pyproject.toml
 ├── requirements.txt
-├── app/
-│   └── streamlit_app.py
 ├── data/
 │   └── sample_papers.csv
-├── docs/
-│   └── model_card.md
 ├── models/
 │   └── topic_classifier.json
-├── paper_topic_classifier/
-│   ├── model.py
-│   ├── predict.py
-│   ├── train.py
-│   └── utils.py
-└── tests/
-    └── test_model.py
+└── paper_topic_classifier/
+    ├── label_text.py
+    ├── model.py
+    ├── run_train.py
+    └── utils.py
 ```
 
 ## Notes
