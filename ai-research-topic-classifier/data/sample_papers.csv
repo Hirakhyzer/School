@@ -1,0 +1,17 @@
+title,abstract,topic
+Neural Models for Document Routing,"This study presents a neural model for classifying research documents and improving semantic search over abstracts.",artificial_intelligence
+Explainable AI for Technical Text,"We evaluate attention-based explanations for machine learning models that classify technical notes and summarize patterns.",artificial_intelligence
+Learning Methods for Resource Allocation,"The paper studies policy learning methods for adaptive resource allocation in simulated distributed systems.",artificial_intelligence
+Forecasting with Tabular Data,"This study compares regression methods for forecasting demand from structured business data and time-based features.",data_science
+Data Cleaning for Analytics Pipelines,"We describe a reproducible workflow for cleaning missing values and validating schema changes before dashboard reporting.",data_science
+Feature Engineering for Churn Analysis,"The paper evaluates feature selection and classification metrics for subscription datasets.",data_science
+Testing Practices in Agile Teams,"This study investigates automated tests, code review habits, and release quality across agile software teams.",software_engineering
+Refactoring Large Python Systems,"We present a maintainability-focused refactoring approach for modularizing large Python applications.",software_engineering
+Continuous Integration Adoption,"The paper measures how continuous integration workflows affect defect detection and developer feedback cycles.",software_engineering
+Network Traffic Forecasting,"This work studies time-series forecasting methods for network traffic and capacity planning.",network_systems
+Distributed Cache Performance,"We evaluate cache placement strategies and their effects on latency in distributed service platforms.",network_systems
+Edge Computing Scheduling,"The paper compares scheduling methods for edge computing workloads with limited device resources.",network_systems
+Language Models for Code Review,"This work studies AI-assisted code review comments and their effect on software maintenance tasks.",artificial_intelligence
+Visual Analytics for Survey Data,"The study builds interactive charts and summary statistics to explore survey responses and identify trends.",data_science
+API Design Quality Metrics,"This paper proposes metrics for evaluating REST API usability, naming consistency, and documentation completeness.",software_engineering
+Routing Optimization in Cloud Platforms,"We analyze routing heuristics for improving service latency across cloud regions.",network_systems
